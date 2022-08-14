@@ -11,7 +11,7 @@ body {
 }
 .container {
     height: 100vh;
-    background-color: #37393f;
+    background-color: #2E3136;
     display: flex;
 }
 
@@ -94,7 +94,6 @@ body {
 }
 
 
-
 /* Active Sidebar */
  .side-bar__avatar--active {
     background-color: rgb(44, 115, 248);
@@ -130,20 +129,28 @@ body {
 
 /* DM */
 
+.wrapper {
+    flex: 1;
+    /* background: green; */
+    width: 100%;
+}
 .dm-panel {
     /* #32393a */
-    background-color: blueviolet; 
+    /* background-color: blueviolet;  */
     width: 330px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /* DM-panel search */
 .dm-panel__search {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px;
+    align-self: stretch;
+    height: 60px;
     background-color: #292b2f;
+    color: #989AA0;
 
 }
 
@@ -155,7 +162,7 @@ body {
     border-radius: 5px;
     text-indent: 10px;
     outline: 0;
-    color: #fff;
+    color: #989AA0;
     font-size: 1.2rem;
 }
 input::placeholder {
@@ -169,7 +176,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
     align-items: center;
     height: 100px;
     justify-content: space-around;
@@ -180,14 +187,17 @@ input::placeholder {
     display: flex;
     width: 85%;
     /* background-color: red; */
+    
     font-size: 1.3em;
     position: relative;
 }
 
 .dm-panel__friendlist__top__friends__icon, .dm-panel__friendlist__top__nitro__icon{
 width: 36px;
+color: #909297
 }
 .dm-panel__friendlist__top__friends__text, .dm-panel__friendlist__top__nitro__text {
+    color: #909297;
 flex: 2;
 
 }
@@ -197,7 +207,7 @@ right: -10px;
 width: 25px;
 height: 25px;
 border-radius: 50%;
-    background-color: red;
+    background: #EC4145;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -224,7 +234,9 @@ color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
+    flex: 1;
+    overflow: auto;
 }
 
 .dm-panel__direct-message__top {
@@ -238,20 +250,26 @@ color: #fff;
 .dm-panel__friends {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    background-color: red;
+    width: 100%;
+    /* background-color: red; */
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
 .dm-panel__friends__friend {
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
+    padding: 0px 15px;
+    margin: 5px 0px;
+    width: 80%;
 }
 
 .dm-panel__friends__friend__avatar {
     background-color: blue;
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -274,8 +292,153 @@ color: #fff;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    justify-content: center;
 }
 
-.dm-panel__user__friend__user__name {
+.dm-panel__friends__friend__user__name {
+    color: #57595c;
+    font-weight: 550; 
+    display: flex;
+    align-items: flex-start;
+}
+
+.dm-panel__friends__friend__user__status {
+    color: #57595c;
+    font-size: small;
     
+}
+
+.dm-panel__user-status {
+    display: flex;
+    background-color: #292b2f;
+    width: 100%;
+    height: 65px;
+
+    align-items: center;
+}
+
+.dm-panel__user-status__avatar {
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 12px;
+    }
+
+.dm-panel__user-status__avatar__status {
+    background-color: green;
+    height: 13px;
+    width: 13px;
+    border: #37393f 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 2px;
+}
+
+.dm-panel__user-status__username {
+    /* background-color: blue; */
+    margin-left: 5px;
+
+}
+
+.dm-panel__user-status__username_name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.dm-panel__user-status__username_number {
+    font-size: 16px;
+    color: #57595c;
+}
+
+
+.dm-panel__user-status__icons {
+align-self: center;
+margin-left: auto;
+font-size: 20px;
+display: flex;
+justify-content: space-around;
+margin-right: 12px;
+width: 40%;
+color: #57595c;
+}
+
+/* active dm panal avatat */
+
+.dm-panel__active {
+    background: #42464E  ;
+    border-radius: 5px;
+}
+
+.dm-panel__active .dm-panel__friends__friend__user > div{
+
+    color:#FFFFFF ;
+}
+/* DM-panel Scrollbar */
+ ::-webkit-scrollbar {
+    width: 5px;
+    /* background: black; */
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: yellow;
+    border-radius: 100vw;
+    margin-block: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: blue;
+    height: 2px;
+
+}
+
+/* Main chat */
+
+/* Search modal */
+.search-modal {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.search-modal__content {
+    opacity: 0.2;
+    width: 700px;
+    height: 500px;
+    background: red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.search-modal__content__input {
+margin-top: 30px;
+height: 100px;
+background: blue;
+width: 90%;
+}
+.search-modal__content__input__search__field {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #202225;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: 0;
+    color: #989AA0;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.search-modal__content__channels {
+backgroun
+width: 90%;
 }
