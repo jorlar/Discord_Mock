@@ -5,18 +5,24 @@ const conversation1 = {
         {
             "text": "Halla balla hva skjera?",
         "user": {
-            name: "_Quoacky"
-        }},
+            name: "_Quacky_"
+        },
+    "date": "Today at 2:54"
+    },
         {"text": "Lite, hva skjer der? SKal vi kode?",
         "user": {
             name: "Odi"
-        }
+        },
+
+    "date": "Today at 2:57"
 
 },
 {
             "text": "Greit la oss gjøre det",
         "user": {
-            name: "_Quoacky"
-        }}
+            name: "_Quacky_"
+        },
+    "date": "Today at 2:57"
+    }
     ]
 }

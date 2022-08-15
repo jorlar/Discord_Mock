@@ -403,7 +403,7 @@ color: #57595c;
 .main-chat {
     display: flex;
     flex-direction: column;
-    background: red;
+    /* background: red; */
     width: 100%;
 }
 
@@ -431,8 +431,6 @@ color: #57595c;
     justify-content: space-around;
     /* background-color: #fff; */
     font-size: 24px;
-
-    background-color: blue;
 }
 
 .main-chat__top__icon-group__group1 {
@@ -467,7 +465,7 @@ color: #57595c;
 /* Main chat conversation */
 .main-chat__conversation {
     height: 100%;
-    background: blue;
+    /* background: blue; */
 }
 
 /* Search modal */
@@ -493,7 +491,6 @@ color: #57595c;
 .search-modal__content__input {
 margin-top: 30px;
 height: 100px;
-background: blue;
 width: 90%;
 }
 .search-modal__content__input__search__field {
@@ -510,7 +507,115 @@ width: 90%;
 }
 .search-modal__content__channels{
 margin-top: 45px;
-background: blue;
 width: 90%;
 }
 
+/* Main Chat */
+
+.main-chat__top__user {
+    color: #fff;
+}
+
+.main-chat__top__icon-group__group1, 
+.main-chat__top__icon-group__search, 
+.main-chat__top__icon-group__group2 {
+    color: #989AA0;
+}
+
+.main-chat__conversation {
+    display: flex;
+    flex-direction: column;
+}
+.main-chat__conversation__user,
+.main-chat__conversation__odi {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.main-chat__conversation__user_avatar,
+.main-chat__conversation__odi_avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.main-chat__conversation__odi_message, 
+.main-chat__conversation__user_message {
+    margin-left: 12px;
+}
+.main-chat__conversation__user_message__wrapper__top,
+.main-chat__conversation__odi_message__wrapper__top {
+    display: flex;
+    /* width: 125px; */
+    justify-content: flex-start; 
+    /* background-color: greenyellow; */
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.main-chat__conversation__odi_message__name, 
+.main-chat__conversation__user_message__name {
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-chat__conversation__odi_message__date, 
+.main-chat__conversation__user_message__date{
+    margin-left: 8px;
+    font-size: 12px;
+    color: #96999D;  
+}
+
+.main-chat__conversation__odi_message__wrapper__bottom, 
+.main-chat__conversation__user_message__wrapper__bottom {
+    color: #fff;
+    display: flex;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.main-chat__new-message {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    height: 40px;
+    background-color: #42464E;
+    color: #989AA0;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+}
+
+.main-chat__new-message__input {
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: 0;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    width: 90%;
+    
+}
+
+.main-chat__new-message__icons {
+    margin: auto;
+}
+
+
+
+img {
+ height: 100%;
+ width: 100%;
+ border-radius: 50%;
+}
